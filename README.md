@@ -1,10 +1,10 @@
-# Demo Course
+# Example of a Syllabus in PreTeXt
 
-This is an example of how you could set up a "course" in PreTeXt.
+This is an example of how you could design a syllabus in PreTeXt. The syllabus is from Mitch Keller's Spring 2025 MATH/COMP SCI 240 (Intro to Discrete Math) course at UW--Madison. It is configured with the contents level set to 0, which suppresses the table of contents side panel, making a page that embeds easily into other places.
 
 ## Instructions
 
-Build the entire course with:
+Build the HTML syllabus for posting on the open web with:
 
 ```bash
 pretext build web
@@ -16,25 +16,26 @@ and then view it with
 pretext view
 ```
 
-If you want to build just a single activity, say the "Magic Beans" activity, run:
+You can build a PDF version with: 
 
 ```bash
-pretext build ./source/activities/magic-beans.ptx
+pretext build print
 ```
 
-This will create a pdf inside the `source/activities` directory.
-
-Another thing to try:
+and then view it with 
 
 ```bash
-pretext build web -i ./source/main-no-syllabus.ptx
+pretext view print
 ```
 
-Note that there is a `web` target in `project.ptx` but it builds from `main.ptx` not `main-no-syllabus.ptx`.  So using the `-i` flag, you can override the input file but still use the settings for an existing target.
+If you want the LaTeX source for the print version (perhaps to edit a bit before making the final print version), you can use:
 
-### How this is done
+```bash
+pretext build latex
+```
 
-Look at the source files, in particular `source/acitivies.ptx` and `source/activities/magic-beans.ptx` to see how the activities are included in the main document and can also build on their own.
+and then view it with 
 
-The use of `xpointer="/1/1/1"` is a little mysterious; we could have also used `xpoint="Activity-magic-beans"` to refer to the activity by its `xml:id`, although this would require us changing that for each included activity.
-
+```bash
+pretext view latex
+```
