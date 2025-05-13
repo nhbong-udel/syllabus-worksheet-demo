@@ -2,12 +2,20 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2" xsl="xsl">
   <targets>
-    <target name="syllabus" format="html" xsl="custom-html.xsl" />
-    <target name="syllabus-canvas" format="html" xsl="custom-html.xsl" 
-            compression="scorm" publication="publication_scorm.ptx" 
+    <target name="syllabus-web" source="syllabus/syllabus.ptx" format="html" xsl="custom-html.xsl"
+            publication="publication_syllabus.ptx" />
+    <target name="syllabus-canvas" source="syllabus/syllabus.ptx" format="html" xsl="custom-html.xsl" 
+            compression="scorm" publication="publication_scorm_syllabus.ptx" 
             output-filename="math240-spring2025-syllabus.zip" />
-    <target name="syllabus-print" format="pdf" output-filename="math240-spring2025-syllabus.pdf" publication="publication_latex.ptx" />
-    <target name="syllabus-latex" format="latex" output-filename="math240-spring2025-syllabus.tex" publication="publication_latex.ptx" />
+    <target name="syllabus-print" source="syllabus/syllabus.ptx" format="pdf" output-filename="math240-spring2025-syllabus.pdf"       
+            publication="publication_latex_syllabus.ptx" />
+    <target name="syllabus-latex" source="syllabus/syllabus.ptx" format="latex" output-filename="math240-spring2025-syllabus.tex" 
+            publication="publication_latex_syllabus.ptx" />
+    <target name="worksheet-web" format="html" publication="publication_worksheet.ptx" />
+    <target name="worksheet-print" format="pdf" output-filename="worksheet.pdf"       
+            publication="publication_worksheet.ptx" />
+    <target name="worksheet-latex" format="latex" output-filename="worksheet.tex" 
+            publication="publication_worksheet.ptx" />            
   </targets>
 </project>
 
