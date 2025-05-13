@@ -2,12 +2,12 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2" xsl="xsl">
   <targets>
-    <target name="web" format="html" xsl="custom-html.xsl" />
-    <target name="canvas" format="html" xsl="custom-html.xsl" 
+    <target name="syllabus" format="html" xsl="custom-html.xsl" />
+    <target name="syllabus-canvas" format="html" xsl="custom-html.xsl" 
             compression="scorm" publication="publication_scorm.ptx" 
             output-filename="math240-spring2025-syllabus.zip" />
-    <target name="print" format="pdf" output-filename="math240-spring2025-syllabus.pdf" publication="publication_latex.ptx" />
-    <target name="latex" format="latex" output-filename="math240-spring2025-syllabus.tex" publication="publication_latex.ptx" />
+    <target name="syllabus-print" format="pdf" output-filename="math240-spring2025-syllabus.pdf" publication="publication_latex.ptx" />
+    <target name="syllabus-latex" format="latex" output-filename="math240-spring2025-syllabus.tex" publication="publication_latex.ptx" />
   </targets>
 </project>
 
