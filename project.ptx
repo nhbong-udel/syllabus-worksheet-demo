@@ -3,7 +3,9 @@
 <project ptx-version="2" xsl="xsl">
   <targets>
     <target name="web" format="html" xsl="custom-html.xsl" />
-    <target name="canvas" format="html" xsl="custom-html.xsl" compression="scorm" publication="publication_scorm.ptx" />
+    <target name="canvas" format="html" xsl="custom-html.xsl" 
+            compression="scorm" publication="publication_scorm.ptx" 
+            output-filename="math240-spring2025-syllabus.zip" />
     <target name="print" format="pdf" output-filename="math240-spring2025-syllabus.pdf" publication="publication_latex.ptx" />
     <target name="latex" format="latex" output-filename="math240-spring2025-syllabus.tex" publication="publication_latex.ptx" />
   </targets>
