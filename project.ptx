@@ -7,10 +7,10 @@
             deploy-dir="syllabus" />
     <target name="syllabus-canvas" source="syllabus/syllabus.ptx" format="html" xsl="custom-html.xsl" 
             compression="scorm" publication="publication_scorm_syllabus.ptx" 
-            output-filename="math240-spring2025-syllabus.zip" />
-    <target name="syllabus-print" source="syllabus/syllabus.ptx" format="pdf" output-filename="math240-spring2025-syllabus.pdf"       
+            output-filename="math243-spring2025-syllabus.zip" />
+    <target name="syllabus-print" source="syllabus/syllabus.ptx" format="pdf" output-filename="math243-spring2025-syllabus.pdf"       
             publication="publication_latex_syllabus.ptx" />
-    <target name="syllabus-latex" source="syllabus/syllabus.ptx" format="latex" output-filename="math240-spring2025-syllabus.tex" 
+    <target name="syllabus-latex" source="syllabus/syllabus.ptx" format="latex" output-filename="math243-spring2025-syllabus.tex" 
             publication="publication_latex_syllabus.ptx" />
     <target name="worksheets-web" format="html" source="worksheets/main.ptx"
             publication="publication_worksheets.ptx" deploy-dir="worksheets" />

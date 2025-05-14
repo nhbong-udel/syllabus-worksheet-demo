@@ -4,9 +4,9 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
   
-  <article xml:id="math240-syllabus">
+  <article xml:id="math243-syllabus">
     <title>Worksheet Examples</title>
-    <subtitle>MATH/COMP SCI 240</subtitle>
+    <subtitle>MATH243</subtitle>
     
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -19,7 +19,7 @@
       <xi:include href="./wkst-eqrel-counting.ptx" />
       
     </section>
-    <solutions worksheet="solution">
+    <solutions worksheet="statement solution">
       <title>Solutions to Worksheets</title>
     </solutions>
     
