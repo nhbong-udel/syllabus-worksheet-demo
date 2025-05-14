@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Front Matter",
   "number": "",
   "title": "Front Matter",
-  "body": "  Mitchel T. Keller Department of Mathematics University of Wisconsin Madison  Last Updated:        "
+  "body": "  Novi Herawati Bong Department of Mathematical Sciences University of Delaware  Last Updated:        "
 },
 {
   "id": "wkst-relns-digraphs",
@@ -181,9 +181,9 @@ var ptx_lunr_docs = [
   "body": "  A search committee is formed to find a new software engineer to hire.     If applicants apply for the job, how many hays are there to select a subset of applicants for a short list?      If of the are selected for an interview, how many ways are there to pick the set of applicants who are interviewed? (Assume that the short list is already decided.)      Based on the interview, the committee will rank the top applicants and submit the list to the boss who will make the final decision. (Assume that the interviewees are already decided.) How many ways are there to select the list from the applicants?    "
 },
 {
-  "id": "math240-syllabus-5",
+  "id": "math243-syllabus-5",
   "level": "1",
-  "url": "math240-syllabus-5.html",
+  "url": "math243-syllabus-5.html",
   "type": "Solutions",
   "number": "2",
   "title": "Solutions to Worksheets",
