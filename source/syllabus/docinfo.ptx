@@ -10,7 +10,7 @@
 
   <!-- The next three lines are likely for mature projects only: -->
 
-  <brandlogo url="" source="W-logo.png"/>
+  <brandlogo url="" source="UDLogo.png"/>
   <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
 
   <!-- macros for defining latex math shortcuts. It is good practice -->
