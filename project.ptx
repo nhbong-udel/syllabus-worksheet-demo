@@ -3,7 +3,8 @@
 <project ptx-version="2" xsl="xsl">
   <targets>
     <target name="syllabus-web" source="syllabus/syllabus.ptx" format="html" xsl="custom-html.xsl"
-            publication="publication_syllabus.ptx" />
+            publication="publication_syllabus.ptx" 
+            deploy-dir="syllabus" />
     <target name="syllabus-canvas" source="syllabus/syllabus.ptx" format="html" xsl="custom-html.xsl" 
             compression="scorm" publication="publication_scorm_syllabus.ptx" 
             output-filename="math240-spring2025-syllabus.zip" />
@@ -11,11 +12,12 @@
             publication="publication_latex_syllabus.ptx" />
     <target name="syllabus-latex" source="syllabus/syllabus.ptx" format="latex" output-filename="math240-spring2025-syllabus.tex" 
             publication="publication_latex_syllabus.ptx" />
-    <target name="worksheet-web" format="html" publication="publication_worksheet.ptx" />
-    <target name="worksheet-print" format="pdf" output-filename="worksheet.pdf"       
-            publication="publication_worksheet.ptx" />
-    <target name="worksheet-latex" format="latex" output-filename="worksheet.tex" 
-            publication="publication_worksheet.ptx" />            
+    <target name="worksheets-web" format="html" source="worksheets/main.ptx"
+            publication="publication_worksheets.ptx" deploy-dir="worksheets" />
+    <target name="worksheets-print" format="pdf" source="worksheets/main.ptx"
+            output-filename="worksheets.pdf" publication="publication_worksheets.ptx" />
+    <target name="worksheets-latex" format="latex" source="worksheets/main.ptx"
+            output-filename="worksheets.tex" publication="publication_worksheets.ptx" />            
   </targets>
 </project>
 

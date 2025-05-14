@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+  
+  <article xml:id="math240-syllabus">
+    <title>Worksheet Examples</title>
+    <subtitle>MATH/COMP SCI 240</subtitle>
+    
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+    
+    <!-- Include chapters -->
+    <section xml:id="sec-course-info">
+      <title>Some Examples</title>
+      
+      <xi:include href="./wkst-relns-digraphs.ptx" />
+      <xi:include href="./wkst-eqrel-counting.ptx" />
+      
+    </section>
+    <solutions worksheet="solution">
+      <title>Solutions to Worksheets</title>
+    </solutions>
+    
+  </article>
+</pretext>
